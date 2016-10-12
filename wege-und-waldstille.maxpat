@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 301.0, 65.0, 661.0, 641.0 ],
+		"rect" : [ 308.0, 61.0, 661.0, 680.0 ],
 		"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 		"editing_bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 		"bglocked" : 0,
@@ -27,7 +27,7 @@
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
 		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 3,
+		"toolbars_unpinned_last_save" : 15,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -40,6 +40,214 @@
 		"subpatcher_template" : "Snappy",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ],
+					"bgoncolor" : [ 0.55, 0.55, 0.55, 1.0 ],
+					"fontsize" : 11.0,
+					"hint" : "Make sure that the current cue is 0, and the next cue is 74.",
+					"id" : "obj-22",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 510.0, 285.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 525.0, 222.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"style" : "",
+					"text" : "3",
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ],
+					"bgoncolor" : [ 0.55, 0.55, 0.55, 1.0 ],
+					"fontsize" : 11.0,
+					"hint" : "Check that the clarinet signal is coming into Max and is visible in the input gain meter.",
+					"id" : "obj-23",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 180.0, 71.5, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 120.0, 356.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"style" : "",
+					"text" : "2",
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ],
+					"bgoncolor" : [ 0.55, 0.55, 0.55, 1.0 ],
+					"fontsize" : 11.0,
+					"hint" : "Make sure the audio DSP is turned on.",
+					"id" : "obj-24",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 510.0, 515.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 120.0, 81.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"style" : "",
+					"text" : "1",
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"cantchange" : 1,
+					"fontsize" : 26.0,
+					"hint" : "The current cue (i.e. the most recently triggered cue number)",
+					"id" : "obj-78",
+					"ignoreclick" : 1,
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 345.0, 285.0, 85.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 331.333344, 212.0, 45.0, 40.0 ],
+					"style" : "",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"triangle" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_color2" : [ 0.117647, 0.121569, 0.137255, 1.0 ],
+					"bgfillcolor_proportion" : 0.720554,
+					"bgfillcolor_pt1" : [ 0.5, 0.008696 ],
+					"bgfillcolor_pt2" : [ 0.5, 0.95 ],
+					"bgfillcolor_type" : "gradient",
+					"fontsize" : 26.0,
+					"hint" : "The cue that will be triggered next by the ‘Go!’ button or the spacebar.",
+					"id" : "obj-67",
+					"items" : [ 0, ",", 74, ",", 83, ",", 88 ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 465.0, 135.0, 60.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 438.0, 212.0, 72.0, 40.0 ],
+					"style" : "",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 10.0,
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 411.0, 292.0, 71.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 303.0, 195.0, 72.0, 18.0 ],
+					"style" : "",
+					"text" : "C U R R E N T",
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 10.0,
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 527.25, 142.0, 55.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 405.0, 195.0, 105.0, 18.0 ],
+					"style" : "",
+					"text" : "N E X T",
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 345.0, 555.0, 92.0, 23.0 ],
+					"style" : "",
+					"text" : "adstatus switch"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.665086, 0.106606, 0.136815, 1.0 ],
+					"bgoncolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontsize" : 14.0,
+					"hint" : "Current audio DSP status — must be ON for audio processing to work",
+					"id" : "obj-12",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 345.0, 510.0, 152.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 151.0, 75.0, 360.0, 32.0 ],
+					"style" : "",
+					"text" : "A U D I O   O F F",
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"texton" : "A U D I O   O N",
+					"textoncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"usebgoncolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 10.0,
 					"id" : "obj-34",
@@ -48,7 +256,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 285.0, 135.0, 55.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 183.0, 90.0, 18.0 ],
+					"presentation_rect" : [ 150.0, 255.0, 120.0, 18.0 ],
 					"style" : "",
 					"text" : "(spacebar)",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -70,7 +278,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -331,7 +539,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 165.0, 450.0, 73.0, 22.0 ],
+					"patching_rect" : [ 150.0, 450.0, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -357,9 +565,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 165.0, 405.0, 152.0, 30.0 ],
+					"patching_rect" : [ 150.0, 405.0, 152.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 450.0, 360.0, 32.0 ],
+					"presentation_rect" : [ 150.0, 510.0, 360.0, 32.0 ],
 					"style" : "",
 					"text" : "T E S T   O U T P U T",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -380,12 +588,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 443.0, 180.0, 375.0, 495.0 ],
+						"rect" : [ 36.0, 181.0, 375.0, 495.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -473,12 +681,12 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 3,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 458.0, 206.0, 375.0, 435.0 ],
+										"rect" : [ 880.0, 195.0, 375.0, 435.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -629,7 +837,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 0,
 													"numoutlets" : 0,
-													"patching_rect" : [ 15.0, 45.0, 348.0, 93.0 ],
+													"patching_rect" : [ 15.0, 45.0, 349.0, 93.0 ],
 													"style" : "",
 													"suppressinlet" : 1,
 													"text" : "The electronics for this piece are extremely simple: from b.74 on the clarinettist plays into the piano where a mic picks up their sound. This is fed into three delay lines at 12\", 24\" and 46\", creating a kind of canon. The live clarinet sound is also fed straight back out to the loudspeaker to aid in the blending of the delayed and live sounds."
@@ -690,7 +898,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 155.0, 508.0, 70.0, 23.0 ],
-													"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "float", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 458, 206, 833, 641, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+													"save" : [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 													"style" : "",
 													"text" : "thispatcher"
 												}
@@ -787,7 +995,7 @@
 								"box" : 								{
 									"bgcolor" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
 									"bgoncolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
-									"hint" : "Find out more about how to run the patch",
+									"hint" : "Find out more about what exactly is happening as each cue is triggered",
 									"id" : "obj-8",
 									"maxclass" : "textbutton",
 									"numinlets" : 1,
@@ -842,7 +1050,7 @@
 									"patching_rect" : [ 15.0, 90.0, 348.0, 35.0 ],
 									"style" : "",
 									"suppressinlet" : 1,
-									"text" : "The patch receives audio input over channel 1, and send out a mono signal on channel 1."
+									"text" : "The patch receives audio input over channel 1, and sends out a mono signal on channel 1."
 								}
 
 							}
@@ -1066,7 +1274,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 270.0, 585.0, 70.0, 23.0 ],
-									"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "float", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 443, 180, 818, 675, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "float", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 36, 181, 411, 676, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 									"style" : "",
 									"text" : "thispatcher"
 								}
@@ -1181,7 +1389,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 345.0, 405.0, 152.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 495.0, 360.0, 32.0 ],
+					"presentation_rect" : [ 150.0, 555.0, 360.0, 32.0 ],
 					"style" : "",
 					"text" : "I N S T R U C T I O N S",
 					"texton" : "Go!",
@@ -1212,7 +1420,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 210.0, 30.0, 15.0, 6.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 390.0, 240.0, 120.0, 5.0 ]
+					"presentation_rect" : [ 390.0, 300.0, 120.0, 5.0 ]
 				}
 
 			}
@@ -1224,7 +1432,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 90.0, 30.0, 16.0, 6.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 240.0, 120.0, 5.0 ]
+					"presentation_rect" : [ 150.0, 300.0, 120.0, 5.0 ]
 				}
 
 			}
@@ -1237,7 +1445,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 107.0, 15.0, 101.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.0, 225.0, 359.0, 30.0 ],
+					"presentation_rect" : [ 151.0, 285.0, 359.0, 30.0 ],
 					"style" : "",
 					"text" : "L E V E L S",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -1253,7 +1461,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 525.0, 30.0, 90.0, 8.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 375.0, 120.0, 135.0, 5.0 ]
+					"presentation_rect" : [ 375.0, 165.0, 135.0, 5.0 ]
 				}
 
 			}
@@ -1265,7 +1473,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 345.0, 30.0, 90.0, 8.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 120.0, 135.0, 5.0 ]
+					"presentation_rect" : [ 150.0, 165.0, 135.0, 5.0 ]
 				}
 
 			}
@@ -1278,7 +1486,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 345.0, 15.0, 270.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.0, 105.0, 359.0, 30.0 ],
+					"presentation_rect" : [ 151.0, 150.0, 359.0, 30.0 ],
 					"style" : "",
 					"text" : "C U E S",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -1323,7 +1531,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1562,17 +1770,17 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 20.0,
+					"fontsize" : 26.0,
 					"hint" : "The current cue (i.e. the most recently triggered cue number)",
 					"id" : "obj-90",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 262.0, 285.0, 83.0, 30.0 ],
+					"patching_rect" : [ 315.5, 285.0, 33.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 251.0, 150.0, 79.0, 30.0 ],
+					"presentation_rect" : [ 303.0, 213.0, 33.0, 38.0 ],
 					"style" : "",
-					"text" : "current:",
+					"text" : "b.",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"textjustification" : 2
 				}
@@ -1580,17 +1788,17 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 20.0,
+					"fontsize" : 26.0,
 					"hint" : "The cue that will be triggered next by the ‘Go!’ button or the spacebar.",
 					"id" : "obj-88",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 392.0, 135.0, 58.0, 30.0 ],
+					"patching_rect" : [ 411.0, 135.0, 33.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 391.0, 150.0, 54.0, 30.0 ],
+					"presentation_rect" : [ 405.0, 213.0, 33.0, 38.0 ],
 					"style" : "",
-					"text" : "next:",
+					"text" : "b.",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"textjustification" : 2
 				}
@@ -1650,28 +1858,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"cantchange" : 1,
-					"fontsize" : 20.0,
-					"hint" : "The current cue (i.e. the most recently triggered cue number)",
-					"id" : "obj-78",
-					"ignoreclick" : 1,
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 345.0, 285.0, 69.0, 32.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 330.0, 150.0, 45.0, 32.0 ],
-					"style" : "",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"triangle" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-76",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1724,27 +1910,8 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 20.0,
-					"hint" : "The cue that will be triggered next by the ‘Go!’ button or the spacebar.",
-					"id" : "obj-67",
-					"items" : [ 0, ",", 74, ",", 83, ",", 88 ],
-					"maxclass" : "umenu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 450.0, 135.0, 100.0, 32.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 450.0, 150.0, 60.0, 32.0 ],
-					"style" : "",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgoncolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
-					"fontsize" : 20.0,
+					"fontsize" : 26.0,
 					"hint" : "Trigger next cue (shortcut: spacebar)",
 					"id" : "obj-64",
 					"maxclass" : "textbutton",
@@ -1752,12 +1919,12 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 345.0, 135.0, 42.0, 30.0 ],
+					"patching_rect" : [ 345.0, 135.0, 60.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 150.0, 90.0, 32.0 ],
+					"presentation_rect" : [ 150.0, 195.0, 120.0, 57.0 ],
 					"style" : "",
-					"text" : "Go!",
-					"texton" : "Go!",
+					"text" : "G O !",
+					"texton" : "G O !",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"usebgoncolor" : 1
 				}
@@ -1798,7 +1965,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 570.0, 61.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 379.0, 61.0, 28.0 ],
+					"presentation_rect" : [ 150.0, 434.0, 61.0, 28.0 ],
 					"style" : "",
 					"text" : "dac~ 1",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
@@ -1822,8 +1989,8 @@
 , 			{
 				"box" : 				{
 					"channels" : 1,
+					"fontface" : 0,
 					"fontname" : "Lato",
-					"fontsize" : 14.0,
 					"hint" : "Output levels being sent out of analog output 1",
 					"id" : "obj-39",
 					"maxclass" : "live.gain~",
@@ -1832,14 +1999,14 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 15.0, 495.0, 189.0, 53.0 ],
+					"patching_rect" : [ 15.0, 495.0, 147.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 225.0, 360.0, 285.0, 53.0 ],
+					"presentation_rect" : [ 225.0, 420.0, 285.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
 							"parameter_longname" : "clarinet-in[1]",
-							"parameter_shortname" : "output",
+							"parameter_shortname" : "O U T P U T",
 							"parameter_type" : 0,
 							"parameter_mmin" : -70.0,
 							"parameter_mmax" : 6.0,
@@ -1990,8 +2157,8 @@
 , 			{
 				"box" : 				{
 					"channels" : 1,
+					"fontface" : 0,
 					"fontname" : "Lato",
-					"fontsize" : 14.0,
 					"hint" : "Input levels over analog input 1",
 					"id" : "obj-4",
 					"maxclass" : "live.gain~",
@@ -2000,14 +2167,14 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 15.0, 60.0, 189.0, 53.0 ],
+					"patching_rect" : [ 15.0, 60.0, 147.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 225.0, 270.0, 285.0, 53.0 ],
+					"presentation_rect" : [ 225.0, 345.0, 285.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
 							"parameter_longname" : "clarinet-in",
-							"parameter_shortname" : "input",
+							"parameter_shortname" : "I N P U T",
 							"parameter_type" : 0,
 							"parameter_mmin" : -70.0,
 							"parameter_mmax" : 6.0,
@@ -2033,10 +2200,46 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 15.0, 15.0, 61.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 289.0, 61.0, 28.0 ],
+					"presentation_rect" : [ 150.0, 359.0, 61.0, 28.0 ],
 					"style" : "",
 					"text" : "adc~ 1",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.05 ],
+					"id" : "obj-17",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 315.5, 285.0, 179.5, 32.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 303.0, 195.0, 72.0, 57.0 ],
+					"proportion" : 0.39,
+					"rounded" : 0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.05 ],
+					"id" : "obj-20",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 411.0, 135.0, 189.0, 38.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 405.0, 195.0, 105.0, 57.0 ],
+					"proportion" : 0.39,
+					"rounded" : 0,
+					"style" : ""
 				}
 
 			}
@@ -2056,6 +2259,25 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 354.5, 579.0, 330.0, 579.0, 330.0, 504.0, 354.5, 504.0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -2337,7 +2559,7 @@
 					"destination" : [ "obj-67", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 549.5, 258.0, 626.5, 258.0, 626.5, 124.0, 459.5, 124.0 ],
+					"midpoints" : [ 549.5, 258.0, 626.5, 258.0, 626.5, 124.0, 474.5, 124.0 ],
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -2389,8 +2611,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4" : [ "clarinet-in", "input", 0 ],
-			"obj-39" : [ "clarinet-in[1]", "output", 0 ]
+			"obj-39" : [ "clarinet-in[1]", "O U T P U T", 0 ],
+			"obj-4" : [ "clarinet-in", "I N P U T", 0 ]
 		}
 ,
 		"dependency_cache" : [  ],
