@@ -1,0 +1,22 @@
+graph LR
+    subgraph laptop
+        m7[Max 7]
+    end
+
+    subgraph audio interface
+         ai[inputs]
+         ao[outputs]
+    end
+
+    cl[clarinet] -.-> mic[microphone]
+
+    mic --> |XLR 1| ai
+
+    ai --> |USB| m7
+
+    m7 --> |USB| ao
+
+    ao --> |XLR 2| loudspeaker
+
+     classDef green fill:#bf9,stroke:#690,stroke-width:2px;
+     class mic,e,ai,ao,loudspeaker,m7 green
