@@ -15,3 +15,5 @@ This patch is designed to run in [Max 7](https://cycling74.com/products/max/). I
 * loudspeaker
 
 ![Block diagram of electronics set-up](notes/block-diagram.mmd.png)
+
+![Performance patch running in Max 7](notes/wege-und-waldstille.png)
